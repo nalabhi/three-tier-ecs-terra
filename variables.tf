@@ -8,18 +8,18 @@
 
 variable "region" {
     description = "The AWS region to create resources in."
-    default = "us-east-1"
+    default = "ap-south-1"
 }
 
 # TODO: support multiple availability zones, and default to it.
 variable "availability_zone1" {
     description = "The availability zone"
-    default = "us-east-1a"
+    default = "ap-south-1a"
 }
 
 variable "availability_zone2" {
     description = "The availability zone"
-    default = "us-east-1b"
+    default = "ap-south-1b"
 }
 
 variable "ecs_cluster_name" {
@@ -31,7 +31,7 @@ variable "amis" {
     description = "Which AMI to spawn. Defaults to the AWS ECS optimized images."
     # TODO: support other regions.
     default = {
-        us-east-1 = "ami-0f260fe26c2826a3d"
+        ap-south-1 = "ami-06a0b4e3b7eb7a300"
     }
 }
 
